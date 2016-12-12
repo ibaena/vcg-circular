@@ -1,0 +1,91 @@
+/*******************
+  Circular Styles
+*******************/
+.circular-wrapper-top {
+    height: 50vh;
+    width: 100%;
+    border-style: solid;
+    border-width: 3px;
+    border-color: black;
+    position: relative;
+    top: 5vh;
+}
+
+
+.regular-item-box {
+    border-style: solid;
+    border-width: thin;
+    border-color: black;
+    height: 16.5vh;
+
+    .regular-product-image {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 125px;
+        height: 100%;
+    }
+
+    .regular-product-description-box {
+        line-height: 11px;
+
+        .regular-product-price {
+            font-size: 21px;
+
+            small {
+                color: black;
+            }
+        }
+
+        .regular-product-description-text {
+            font-size: 11px;
+            text-align: left;
+        }
+    }
+}
+
+.featured-product-container {
+    height: 49.5vh;
+    border-right-style: solid;
+    border-right-width: 3px;
+
+    .featured-product-image {
+        height: 100%;
+        width: 100%;
+    }
+
+    .overlay {
+        height: 30%;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        background: rgba(0,0,0,.7);
+
+
+        .featured-product-header {
+            color: white;
+        }
+
+        .featured-product-description {
+            color: white;
+            text-align: justify;
+        }
+
+        .featured-product-price {
+            color: white;
+            position: relative;
+            top: 8vh;
+            left: 4vh;
+            font-size: 30px;
+
+            small {
+                color: white;
+            }
+        }
+    }
+}
+
+
+.featured-product-image:hover .overlay {
+  bottom: 0;
+}

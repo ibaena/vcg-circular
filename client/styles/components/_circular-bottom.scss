@@ -1,0 +1,128 @@
+/*************************
+  Circular Bottom Styles
+**************************/
+.circular-wrapper-bottom {
+    height: 40vh;
+    width: 100%;
+    border-style: solid;
+    border-width: 3px;
+    border-color: black;
+    position: relative;
+    top: 5.5vh;
+    overflow: hidden;
+
+    .bottom-section-product {
+        border-right-style: solid;
+        border-right-width: 2px;
+        height: 39.5vh;
+
+        .border-bottom {
+            border-bottom-style: solid;
+            border-bottom-width: thin;
+        }
+
+        .bottom-product-split {
+            height: 20vh;
+
+            .bottom-image-left {
+                position: absolute;
+                left: 0;
+                top: 0;
+                bottom: 0;
+                width: 160px;
+                height: 100%;
+            }
+
+            .bottom-left-description {
+                position: absolute;
+                top: 2vh;
+                left: 2vh;
+
+                .bottom-left-text {
+                    font-size: 11px;
+                }
+
+                .bottom-left-product-price {
+                    font-size: 22px;
+
+                    small {
+                        color: black;
+                    }
+                }
+            }
+        }
+    }
+}
+/******************
+    MIddle List
+******************/
+.bottom-middle-list {
+    position: relative;
+    top: 1vh;
+    padding: 0;
+
+    .bottom-list-item {
+        list-style-type: none;
+        margin-bottom: 3vh;
+
+        .bottom-list-header {}
+
+        .middle-description {
+            font-size: 11px;
+        }
+
+        .middle-price {
+            line-height: 0;
+
+            small {
+                color: black;
+            }
+        }
+    }
+}
+
+.no-margin-top {
+    margin-top: 0 !important;
+}
+
+.mild-margin-bottom {
+    margin-bottom: 0.5vh !important;
+}
+/******************
+    Right Side
+******************/
+.bottom-right-img {
+    height: 100%;
+    width: 100%;
+}
+
+.overlay-right {
+    height: 100%;
+    width: 55%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+
+    .bottom-right-header {
+        position: relative;
+        top: 10vh;
+        right: -4vh;
+    }
+
+    .bottom-right-description {
+        position: relative;
+        bottom: -11vh;
+        right: -4vh;
+        font-size: 11px;
+    }
+
+    .bottom-right-price {
+        position: relative;
+        bottom: -25vh;
+        right: 5.5vh;
+        width: 10vh;
+        font-size: 30px;
+    }
+}

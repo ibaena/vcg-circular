@@ -5,7 +5,8 @@ Homelayout = React.createClass({
   render(){
     return (
       <div >
-          HOME
+        <CircularTop />
+        <CircularBottom />
       </div>
     )
   }
