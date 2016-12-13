@@ -4,26 +4,16 @@ Meteor.methods({
       name: item.name,
       description: item.description,
       price: item.price,
+      suffix: item.suffix,
       featured: item.featured,
       image: item.image,
       createdAt: new Date(),
     });
-
   },
-  toggleResolutions(resolution) {
-    if(Meteor.userId() !== resolution.user){
-      throw new Meteor.Error("Not authorized");
-    }
-    Resolutions.update(resolution._id, {
-      $set: {
-        complete: !resolution.complete
-      }
-    });
+  showProducts(){
+    Products.find().fetch();
   },
-  deleteResolution(resolution) {
-    if(Meteor.userId() !== resolution.user){
-      throw new Meteor.Error("Not authorized");
-    }
-    Resolutions.remove(resolution._id);
-  },
+});
+Meteor.publish("products", function () {
+    return Products.find({}).fetch();
 });

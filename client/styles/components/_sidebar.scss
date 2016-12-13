@@ -1,0 +1,27 @@
+/*****************
+     Sidebar
+*****************/
+.sidebar-container {
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10vw;
+    background: #607D8B;
+
+    .sidebar-list {
+        position: relative;
+        top: 10vh;
+        padding: 0;
+
+        .sidebar-list-item {
+            list-style-type: none;
+            text-align: center;
+            margin-bottom: 2vh;
+
+            .list-item-link {
+                color: white;
+            }
+        }
+    }
+}

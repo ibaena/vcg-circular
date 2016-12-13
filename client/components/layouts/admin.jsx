@@ -4,8 +4,12 @@ import { mount } from 'react-mounter';
 Adminlayout = React.createClass({
   render(){
     return (
-      <div className="container">
+      <div>
+
+        <div className="container">
+        <Sidebar />
         <Dashboard />
+        </div>
       </div>
     )
   }
