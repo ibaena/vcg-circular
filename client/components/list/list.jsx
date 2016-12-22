@@ -27,7 +27,7 @@ List = React.createClass({
         return(
           <li key={item._id}>
             <span>{item.name}</span>
-            <span className="margin-left">{item.price}</span>
+            <span className="margin-left">{item.price} {item.suffix}</span>
           </li>
         )
       });
