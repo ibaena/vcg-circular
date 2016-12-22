@@ -1,7 +1,7 @@
 import { Mongo } from 'meteor/mongo';
 
-Products = new Mongo.Collection('products');
 
+  Products = new Mongo.Collection('products');
 
 
 /*Products.allow({

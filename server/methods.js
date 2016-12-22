@@ -13,5 +13,4 @@ Meteor.methods({
       createdAt: new Date(),
     });
   },
-
 });
