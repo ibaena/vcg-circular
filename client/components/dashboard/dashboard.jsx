@@ -8,8 +8,9 @@ componentDidMount(){
   render(){
 
     return (
-      <div className="dash-container">
+      <div className="dash-container row">
         <FormProduct />
+        <List />
       </div>
     )
   }

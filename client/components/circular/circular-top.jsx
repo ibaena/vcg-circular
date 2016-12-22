@@ -2,6 +2,14 @@ import React from 'react';
 import { mount } from 'react-mounter';
 
 CircularTop = React.createClass({
+  testArray:[
+    {_id:'0', name:'Title 1', description:'Lorem Ipsum 1 is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy', price: '17.99', suffix:'lb.'},
+    {_id:'1', name:'Title 2', description:'Lorem Ipsum 2 is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy', price: '0.99', suffix:'ea.'},
+    {_id:'2', name:'Title 3', description:'Lorem Ipsum 3 is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy', price: '8.99', suffix:'lb.'},
+    {_id:'3', name:'Title 4', description:'Lorem Ipsum 4 is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy', price: '1.99', suffix:'lb.'},
+    {_id:'4', name:'Title 5', description:'Lorem Ipsum 5 is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy', price: '10.99', suffix:'ea.'},
+    {_id:'5', name:'Title 6', description:'Lorem Ipsum 6 is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy', price: '37.99', suffix:'lb.'},
+  ],
   componentDidMount(){
     $('.overlay').hide();
 
@@ -11,7 +19,6 @@ CircularTop = React.createClass({
       $(".overlay").slideUp(300);
     });
   },
-
   render(){
     var regularItems = this.testArray.map(function(item){
       return (
