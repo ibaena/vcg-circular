@@ -25,20 +25,41 @@ List = React.createClass({
       var countProd = prod.map(function(item){
 
         return(
-          <li key={item._id}>
-            <span>{item.name}</span>
-            <span className="margin-left">{item.price} {item.suffix}</span>
-          </li>
+
+            <div className="panel panel-default">
+              <div className="panel-heading" role="tab" id={item._id}>
+                <h4 className="panel-title">
+                  <a role="button" data-toggle="collapse" data-parent="#accordion" href={"#collapse"+item._id} aria-expanded="false" aria-controls={"collapse"+item._id} >
+                    {item.name}
+                  </a>
+                </h4>
+              </div>
+              <div id={"collapse"+item._id} className="panel-collapse collapse" role="tabpanel" aria-labelledby={item._id}>
+                <div className="panel-body">
+                <ul className="list-group">
+                  <li className="list-group-item">
+                    <span className="small-text">Unit Price</span> <br />
+                    {item.price}
+                  </li>
+                  <li className="list-group-item">
+                    <span className="small-text">Unit Description</span> <br />
+                    {item.description}
+                  </li>
+                </ul>
+                </div>
+              </div>
+            </div>
+
         )
       });
     return (
       <div className="list-container">
         <div className="col-lg-5 col-lg-offset-1 list-card">
-          <ul>
+          <div className="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
             {countProd}
-          </ul>
+          </div>
         </div>
-      </div>
+    </div>
     )
   }
 });
