@@ -1,5 +1,8 @@
+
+
 Meteor.methods({
   addProduct(item) {
+    console.log('hello');
     Products.insert({
       name: item.name,
       description: item.description,
@@ -10,10 +13,5 @@ Meteor.methods({
       createdAt: new Date(),
     });
   },
-  showProducts(){
-    Products.find().fetch();
-  },
-});
-Meteor.publish("products", function () {
-    return Products.find({}).fetch();
+
 });
