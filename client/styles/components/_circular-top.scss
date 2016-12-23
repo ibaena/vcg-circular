@@ -29,8 +29,17 @@
     .regular-product-description-box {
         line-height: 11px;
 
+        .regular-header-text{
+          font-size: calc(1vh + .5em);
+          margin-bottom: .3vh;
+        }
+
         .regular-product-price {
-            font-size: 21px;
+          font-size: calc(1vh + .5em);
+          position: relative;
+          bottom: 3vh;
+          left: 3vh;
+          float: right;
 
             small {
                 color: black;
@@ -38,8 +47,8 @@
         }
 
         .regular-product-description-text {
-            font-size: 11px;
-            text-align: left;
+          font-size: calc(1.2vh + .1em);
+          text-align: left;
         }
     }
 }

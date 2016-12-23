@@ -38,12 +38,23 @@
                 top: 2vh;
                 left: 2vh;
 
+                .bottom-left-header {
+                  font-size: calc(1vh + .8em);
+                  margin: 0;
+                  position: relative;
+                  bottom: .8vh;    
+                }
+
                 .bottom-left-text {
                     font-size: 11px;
                 }
 
                 .bottom-left-product-price {
-                    font-size: 22px;
+                  font-size: calc(1vh + .7em);
+                  margin: 0;
+                  float: right;
+                  position: relative;
+                  bottom: 1vh;
 
                     small {
                         color: black;
